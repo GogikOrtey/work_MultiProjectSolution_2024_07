@@ -26,12 +26,18 @@ public class Application : ExternalApplication
     {
         var panel = Application.CreatePanel("Commands", "RevitAddIn");
 
-        panel.AddPushButton<ShowModalWindowCommand>("Show\nModal window")
-            .SetImage("/RevitAddIn;component/Resources/Icons/RibbonIcon16.png")
-            .SetLargeImage("/RevitAddIn;component/Resources/Icons/RibbonIcon32.png");
+        //panel.AddPushButton<ShowModalWindowCommand>("Show\nModal window")
+        //    .SetImage("/RevitAddIn;component/Resources/Icons/RibbonIcon16.png")
+        //    .SetLargeImage("/RevitAddIn;component/Resources/Icons/RibbonIcon32.png");
 
-        panel.AddPushButton<ShowModelessWindowCommand>("Show\nModeless window")
-            .SetImage("/RevitAddIn;component/Resources/Icons/RibbonIcon16.png")
-            .SetLargeImage("/RevitAddIn;component/Resources/Icons/RibbonIcon32.png");
+        //panel.AddPushButton<ShowModelessWindowCommand>("Show\nModeless window")
+        //    .SetImage("/RevitAddIn;component/Resources/Icons/RibbonIcon16.png")
+        //    .SetLargeImage("/RevitAddIn;component/Resources/Icons/RibbonIcon32.png");
+
+        panel.AddPushButton<StartupCommand>("Кнопка 1")
+            .SetLargeImage("/RevitAddIn;component/Resources/Icons/ico_new_1_32.png");   
+
+        panel.AddPushButton<StartupCommand2>("Кнопка 2")
+            .SetLargeImage("/RevitAddIn;component/Resources/Icons/ico_new_2_32.png");
     }
 }

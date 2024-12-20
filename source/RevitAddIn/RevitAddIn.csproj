@@ -42,26 +42,67 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Nice3point.Revit.Build.Tasks" Version="2.*"/>
-        <PackageReference Include="Nice3point.Revit.Toolkit" Version="$(RevitVersion).*-*"/>
-        <PackageReference Include="Nice3point.Revit.Extensions" Version="$(RevitVersion).*-*"/>
-        <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="$(RevitVersion).*-*"/>
-        <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="$(RevitVersion).*-*"/>
-        <PackageReference Include="Serilog.Sinks.Debug" Version="2.*"/>
-        <PackageReference Include="Serilog.Extensions.Hosting" Version="8.*"/>
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.*"/>
+      <None Remove="Resources\Icons\ico_new_1.png" />
+      <None Remove="Resources\Icons\ico_new_1_32.png" />
+      <None Remove="Resources\Icons\ico_new_2.png" />
+      <None Remove="Resources\Icons\ico_new_2_32.png" />
+      <None Remove="Resources\Icons\r2\ico_new_1.png" />
+      <None Remove="Resources\Icons\r2\ico_new_1_32.png" />
+      <None Remove="Resources\Icons\r2\ico_new_2.png" />
+      <None Remove="Resources\Icons\r2\ico_new_2_32.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Nice3point.Revit.Build.Tasks" Version="2.*" />
+        <PackageReference Include="Nice3point.Revit.Toolkit" Version="$(RevitVersion).*-*" />
+        <PackageReference Include="Nice3point.Revit.Extensions" Version="$(RevitVersion).*-*" />
+        <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="$(RevitVersion).*-*" />
+        <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="$(RevitVersion).*-*" />
+        <PackageReference Include="Serilog.Sinks.Debug" Version="2.*" />
+        <PackageReference Include="Serilog.Extensions.Hosting" Version="8.*" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.*" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.*" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
     </ItemGroup>
 
     <ItemGroup>
-        <Resource Include="Resources\Icons\RibbonIcon16.png"/>
-        <Resource Include="Resources\Icons\RibbonIcon32.png"/>
+        <Resource Include="Resources\Icons\ico_new_1.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <Resource Include="Resources\Icons\ico_new_1_32.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <Resource Include="Resources\Icons\ico_new_2.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <Resource Include="Resources\Icons\ico_new_2_32.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <Resource Include="Resources\Icons\r2\ico_new_1.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <Resource Include="Resources\Icons\r2\ico_new_1_32.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <Resource Include="Resources\Icons\r2\ico_new_2.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <Resource Include="Resources\Icons\r2\ico_new_2_32.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <Resource Include="Resources\Icons\RibbonIcon16.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <Resource Include="Resources\Icons\RibbonIcon32.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\ModalModule\ModalModule.csproj" />
       <ProjectReference Include="..\ModelessModule\ModelessModule.csproj" />
+      <ProjectReference Include="..\Module2\Module2.csproj" />
+      <ProjectReference Include="..\Module\Module.csproj" />
     </ItemGroup>
 
 </Project>
